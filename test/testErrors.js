@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
-this.timeout(5000);
 const assert = require('assert');
 const {createBattery, findBatteryById, updateBattery, deleteBattery} = require('../index.js');
 
 describe('Error Handling in Battery Service', () => {
+  this.timeout(5000);
   it('should throw error for createBattery', async () => {
     const batteryData = {}; // Empty data to intentionally cause an error
 
