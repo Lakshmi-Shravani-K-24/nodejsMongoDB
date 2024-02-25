@@ -3,7 +3,9 @@ const assert = require('assert');
 const {createBattery, findBatteryById, updateBattery, deleteBattery} = require('../index.js');
 
 describe('Error Handling in Battery Service', () => {
+  // Set timeout for all tests in this suite
   this.timeout(5000);
+
   it('should throw error for createBattery', async () => {
     const batteryData = {}; // Empty data to intentionally cause an error
 
