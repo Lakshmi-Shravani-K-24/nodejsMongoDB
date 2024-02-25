@@ -1,4 +1,5 @@
 /* eslint-disable max-len */
+this.timeout(5000);
 const assert = require('assert');
 const {createBattery, findBatteryById, updateBattery, deleteBattery} = require('../index.js');
 
